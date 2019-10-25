@@ -1,13 +1,7 @@
+require 'pry'
 def square_array(array)
- 
-index = 0 
-new_array = array 
 
-array.each do |x|
-x = x * x 
-new_array[index] = x 
-index += 1 
-end 
+array.each_with_index {|num, i| array[i] = num * num}
+#binding.pry
 
-return new_array
 end
