@@ -1,3 +1,7 @@
+require 'pry'
 def square_array(array)
-  # your code here
+
+array.each_with_index {|num, i| array[i] = num * num}
+#binding.pry
+
 end
